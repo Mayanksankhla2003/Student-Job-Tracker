@@ -23,7 +23,6 @@ const sampleJobs = [
 ];
 
 const Home = () => {
-    const [jobs, setJobs] = useState(sampleJobs);
     const [isFormOpen, setIsFormOpen] = useState(false);
     return (
         <div className="w-full h-full">
@@ -38,7 +37,7 @@ const Home = () => {
                 Add Job Application
             </button>
             <div className="space-y-4 mt-5">
-                {jobs.map((job) => (
+                {sampleJobs.map((job) => (
                     <JobCard key={job._id} job={job} />
                 ))}
             </div>
