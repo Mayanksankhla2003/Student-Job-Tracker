@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const jobSchema = new mongoose.Schema(
     {
-        comanyName: {
+        companyName: {
             type: String,
             required: true,
         },
@@ -12,11 +12,11 @@ const jobSchema = new mongoose.Schema(
         },
         status: {
             type: String,
-            enum: ["applied", "interview", "offer", "rejected"],
-            default: "applied",
+            enum: ["Applied", "Interview", "Offered", "Rejected"],
+            default: "Applied",
         },
         applicationDate: {
-            type: Date,
+            type: String,
             required: true,
         },
         link: {
@@ -27,4 +27,4 @@ const jobSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-export default mongoose.model("Job", jobSchema);
+module.exports = mongoose.model("Job", jobSchema);

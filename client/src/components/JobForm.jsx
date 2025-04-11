@@ -1,17 +1,24 @@
 import React from "react";
 
-const JobForm = ({ isFormOpen, setIsFormOpen }) => {
-    // const handleChange = (e) => {
-    //     const { name, value } = e.target;
-    //     setFormData((prev) => ({
-    //         ...prev,
-    //         [name]: value,
-    //     }));
-    // };
-    const isEdit = false;
+const JobForm = ({
+    isFormOpen,
+    setIsFormOpen,
+    formData,
+    setFormData,
+    handleSubmit,
+    isEdit,
+}) => {
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
     return (
         <form
-            // onSubmit={handleSubmit}
+            onSubmit={handleSubmit}
             className="bg-white rounded-xl shadow-md p-6 mb-6 max-w-2xl w-[50%] mx-auto"
         >
             <div className="flex">
@@ -30,10 +37,10 @@ const JobForm = ({ isFormOpen, setIsFormOpen }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                     type="text"
-                    name="company"
+                    name="companyName"
                     placeholder="Company"
-                    // value={"Google"}
-                    // onChange={handleChange}
+                    value={formData.companyName}
+                    onChange={handleChange}
                     required
                     className="border px-3 py-2 rounded-md w-full"
                 />
@@ -41,15 +48,15 @@ const JobForm = ({ isFormOpen, setIsFormOpen }) => {
                     type="text"
                     name="role"
                     placeholder="Role"
-                    // value={formData.role}
-                    // onChange={handleChange}
+                    value={formData.role}
+                    onChange={handleChange}
                     required
                     className="border px-3 py-2 rounded-md w-full"
                 />
                 <select
                     name="status"
-                    // value={formData.status}
-                    // onChange={handleChange}
+                    value={formData.status}
+                    onChange={handleChange}
                     required
                     className="border px-3 py-2 rounded-md w-full"
                 >
@@ -61,9 +68,9 @@ const JobForm = ({ isFormOpen, setIsFormOpen }) => {
                 </select>
                 <input
                     type="date"
-                    name="appliedDate"
-                    // value={formData.appliedDate}
-                    // onChange={handleChange}
+                    name="applicationDate"
+                    value={formData.applicationDate}
+                    onChange={handleChange}
                     required
                     className="border px-3 py-2 rounded-md w-full"
                 />
@@ -71,15 +78,15 @@ const JobForm = ({ isFormOpen, setIsFormOpen }) => {
                     type="url"
                     name="link"
                     placeholder="Application Link"
-                    // value={formData.link}
-                    // onChange={handleChange}
+                    value={formData.link}
+                    onChange={handleChange}
                     className="border px-3 py-2 rounded-md w-full"
                 />
             </div>
 
             <button
                 type="submit"
-                className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-md block mx-auto"
+                className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-md block mx-auto curosr-pointer"
             >
                 {isEdit ? "Update Job" : "Add Job"}
             </button>
