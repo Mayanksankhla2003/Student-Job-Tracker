@@ -17,7 +17,7 @@ const JobCard = ({ job, onUpdate, onDelete }) => {
                 </p>
                 <a
                     href={job.link}
-                    className="text-blue-500 text-sm underline"
+                    className="text-blue-500 text-sm underline cursor-pointer"
                     target="_blank"
                 >
                     Job Link
@@ -32,13 +32,13 @@ const JobCard = ({ job, onUpdate, onDelete }) => {
             </div>
             <div className="flex gap-3 text-xl">
                 <button
-                    className="text-yellow-500 hover:text-yellow-600"
+                    className="text-yellow-500 hover:text-yellow-600 cursor-pointer"
                     onClick={() => onUpdate(job)}
                 >
                     ✏️
                 </button>
                 <button
-                    className="text-red-500 hover:text-red-600"
+                    className="text-red-500 hover:text-red-600 cursor-pointer"
                     onClick={() => onDelete(job._id)}
                 >
                     🗑️

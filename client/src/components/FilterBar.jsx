@@ -20,7 +20,7 @@ const FilterBar = ({ filter, setFilter, resetFilters }) => {
                 <option value="">Filter by Status</option>
                 <option value="applied">Applied</option>
                 <option value="interview">Interview</option>
-                <option value="offer">Offer</option>
+                <option value="offered">Offered</option>
                 <option value="rejected">Rejected</option>
             </select>
             <input
@@ -32,7 +32,7 @@ const FilterBar = ({ filter, setFilter, resetFilters }) => {
             />
             <button
                 onClick={resetFilters}
-                className="ml-4 px-3 py-2 bg-blue-300 hover:bg-blue-500 rounded text-md"
+                className="ml-4 px-3 py-2 bg-blue-300 hover:bg-blue-500 rounded text-md cursor-pointer"
             >
                 Reset
             </button>

@@ -1,12 +1,42 @@
-# React + Vite
+# 🎯 Student Job Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Track your job applications like a pro!  
+[Live Demo 🚀](https://job-tracker-client-brown.vercel.app/) &nbsp; | &nbsp; [GitHub Repo 🛠️](https://github.com/Mayanksankhla2003/Student-Job-Tracker)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Overview
 
-## Expanding the ESLint configuration
+**Student Job Tracker** is a full-stack web app built for students and job seekers to organize and track their job applications with ease. Whether it's an internship, full-time job, or freelance gig — track every application step with confidence.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> ⚡ Designed for productivity. Built for modern job hunters.
+
+---
+
+## ✨ Features
+
+- ✅ **Add/Edit/Delete** job applications
+- 📊 **Dashboard view** for quick glance of application status
+- 🔍 **Search & Filter** functionality to find jobs instantly
+- 🧾 **Track Stages**: Applied, Interview, Offer, Rejected, etc.
+- 📈 Status summaries with color-coded tags
+
+---
+
+## 🧱 Tech Stack
+
+| Frontend             | Backend            | Database  | Others                         |
+|----------------------|--------------------|-----------|--------------------------------|
+| React.js + Vite ⚡    | Node.js + Express 🛠️ | MongoDB 🍃 | TailwindCSS, Axios, Vercel, Render |
+
+---
+
+## 🖼️ Screenshots
+
+> _Coming soon..._ (You can add actual screenshots or GIFs here later to make it more engaging)
+
+---
+
+## 🚀 Live Demo
+
+👉 [Check it out here](https://job-tracker-client-brown.vercel.app/)
