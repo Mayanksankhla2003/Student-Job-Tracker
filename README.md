@@ -33,7 +33,10 @@ Track your job applications like a pro!
 
 ## 🖼️ Screenshots
 
-> _Coming soon..._ (You can add actual screenshots or GIFs here later to make it more engaging)
+<img width="500px" height="500px" src="https://github.com/Mayanksankhla2003/Student-Job-Tracker/blob/main/Screenshot%201.png">
+<img width="500px" height="500px" src="https://github.com/Mayanksankhla2003/Student-Job-Tracker/blob/main/Screenshot%202.png">
+<img width="500px" height="500px" src="https://github.com/Mayanksankhla2003/Student-Job-Tracker/blob/main/Screenshot%203.png">
+<img width="500px" height="500px" src="https://github.com/Mayanksankhla2003/Student-Job-Tracker/blob/main/Screenshot%204.png">
 
 ---
 
